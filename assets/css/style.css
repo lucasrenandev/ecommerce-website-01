@@ -1,0 +1,445 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #fff;
+}
+
+/* ==== HEADER ==== */
+
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 20px 14%;
+    background-color: transparent;
+    transition: .35s ease;
+    z-index: 1;
+}
+
+header.sticky {
+    background: #fff;
+    padding: 14px 14%;
+    box-shadow: 0px 0px 10px rgb(0 0 0 / 10%);
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header nav .logo a {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #111;
+    letter-spacing: 1px;
+}
+
+header nav ul {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+header nav ul li a {
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 10px 25px;
+    color: #111;
+    transition: all .35s ease;
+}
+
+header nav ul li a:hover {
+    color: #c8815f;
+}
+
+header nav .menu-icons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+header nav .menu-icons i {
+    font-size: 2.1rem;
+    color: #111;
+    transition: .35s ease;
+}
+
+header nav .menu-icons i:hover {
+    color: #c8815f;
+}
+
+header nav .menu-icons .bx-menu {
+    font-size: 2.2rem;
+    color: #111;
+    z-index: 2;
+    display: none;
+}
+
+/* ==== SECTION HOME ==== */
+
+.home {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 100px 14%;
+    background-color: #F8F4F1;
+    background-image: url("../images/background.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+}
+
+.home .home-content h1 {
+    font-size: 4.5rem;
+    font-weight: 700;
+    letter-spacing: 0.6rem;
+    margin-bottom: 2rem;
+}
+
+.home .home-content h1 span {
+    font-size: 3.3rem;
+}
+
+.home .home-content p {
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 0.2rem;
+    margin-bottom: 2rem;
+}
+
+.home .home-content .home-button {
+    display: inline-block;
+    background-color: #c8815f;
+    color: #fff;
+    padding: 13px 25px;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 5px;
+    transition: .35s ease;
+    letter-spacing: 1px;
+}
+
+.home .home-content .home-button:hover {
+    background-color: #111;
+    transform: translateY(-5px);
+}
+
+/* ==== SECTION FEATURED ==== */
+
+.featured {
+    width: 100%;
+    text-align: center;
+    padding: 100px 14%;
+}
+
+.featured h2 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.featured .featured-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    align-items: center;
+    gap: 1.3rem;
+    margin-top: 4rem;
+}
+
+.featured .featured-content .content {
+    position: relative;
+    transition: .35s ease;
+}
+
+.featured .featured-content .content:hover {
+    transform: scale(0.9) translateY(-5px);
+    cursor: pointer;
+}
+
+.featured .featured-content .content img {
+    width: 100%;
+}
+
+.featured .featured-content .content .content-text {
+    position: absolute;
+    top: 10%;
+    left: 8%;
+}
+
+.featured .featured-content .content .content-text h5 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 1rem;
+}
+
+.featured .featured-content .content .content-text span {
+    color: #555;
+    font-size: 0.9rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.featured .featured-content .content .content-arrow {
+    position: absolute;
+    bottom: 10%;
+    left: 10%;
+    transition: .35s ease;
+}
+
+.featured .featured-content .content .content-arrow a i {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #fff;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+    color: #111;
+    transition: all .35s ease;
+}
+
+.featured .featured-content .content:hover .content-arrow a i {
+    background-color: #c8815f;
+    color: #fff;
+}
+
+/* ==== SECTION CTA ==== */
+
+.cta {
+    width: 100%;
+    height: 60vh;
+    background-color: #F8F4F1;
+    background-image: url("../images/ffffc.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 0 14%;
+    display: flex;
+    align-items: center;
+}
+
+.cta .cta-content {
+    max-width: 450px;
+}
+
+.cta .cta-content h5 {
+    font-size: 1.1rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.cta .cta-content h2 {
+    font-size: 3.3rem;
+    font-weight: 700;
+    letter-spacing: 0.6rem;
+}
+
+/* ==== SECTION NEW ==== */
+
+.new {
+    width: 100%;
+    padding: 100px 14%;
+}
+
+.new .new-content h3  {
+    text-align: left;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.new .new-content .figure-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    margin-top: 4rem;
+}
+
+.new .new-content .figure-content figure {
+    position: relative;
+    transition: all .35s ease;
+}
+
+.new .new-content .figure-content figure:hover {
+    transform: scale(0.9) translateY(-5px);
+    cursor: pointer;
+}
+
+.new .new-content .figure-content figure img {
+    width: 100%;
+    border-radius: 0 10px 10px 10px;
+}
+
+.new .new-content .figure-content figure .sale {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #c8815f;
+    padding: 5px 15px;
+}
+
+.new .new-content .figure-content figure .figure-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    gap: 10px;
+}
+
+.new .new-content .figure-content figure .figure-text span {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.new .new-content .figure-content figure .figure-text small {
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.new .new-content .figure-content figure .sale span {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #fff;
+}
+
+/* ==== SECTION BRAND ==== */
+
+.brand {
+    width: 100%;
+    padding: 50px 14%;
+}
+
+.brand .brand-content {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.brand .brand-content figure {
+    max-width: 165px;
+}
+
+.brand .brand-content figure img {
+    width: 100%;
+    opacity: 0.6;
+    transition: all .35s ease;
+}
+
+.brand .brand-content figure img:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+/* ==== FOOTER CONTACT ==== */
+
+.contact {
+    position: relative;
+    padding: 100px 14%;
+    width: 100%;
+    height: 68vh;
+    background-color: #111;
+}
+
+.contact .contact-main {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+
+.contact .contact-main .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.contact .contact-main .content h3 {
+    color: #fff;
+    font-size: 1.45rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+.contact .contact-main .content p {
+    color: #555;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 0.20px;
+    margin-bottom: 2rem;
+}
+
+.contact .contact-main .content .social {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.contact .contact-main .content .social i {
+    font-size: 1.6rem;
+    color: #555;
+    transition: all .35s ease;
+}
+
+.contact .contact-main .content .social i:hover {
+    transform: translateY(-5px);
+    cursor: pointer;
+}
+
+.contact .contact-main .content ul li:not(:last-child) {
+    margin-bottom: 1rem;
+}
+
+.contact .contact-main .content ul li a {
+    display: block;
+    color: #555;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 0.20px;
+    transition: all .35s ease;
+}
+
+.contact .contact-main .content ul li a:hover {
+    transform: translateX(-8px);
+    color: #fff;
+}
+
+.contact .last-content {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.contact .last-content p {
+    color: #555;
+    font-size: 0.9rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
