@@ -36,11 +36,11 @@
     }
 
     header nav ul {
-        position: fixed;
-        top: 9%;
+        position: absolute;
+        top: 80%;
         left: -100%;
         width: 65%;
-        min-height: 100vh;
+        height: 100vh;
         background-color: #fff;
         flex-direction: column;
         justify-content: center;
@@ -70,11 +70,8 @@
     .contact .last-content p {
         font-size: 0.8rem;
     }
-}
-
-@media screen and (max-width: 330px) {
 
     .cta {
-        background-position: 80%;
+        background-position: 70%;
     }
 }
