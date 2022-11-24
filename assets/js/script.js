@@ -1,22 +1,22 @@
 const header = document.querySelector("header")
-const navlist = document.querySelector(".nav-list")
+const navList = document.querySelector(".nav-list")
 const menuIcon = document.querySelector("#menu-icon")
 const scrollArrowContainer = document.querySelector(".scroll-arrow")
 const scrollArrow = document.querySelector("#up-arrow")
 
-document.addEventListener("scroll", () => {
+window.addEventListener("scroll", () => {
     header.classList.toggle("sticky", window.scrollY > 0)
 })
 
 menuIcon.addEventListener("click", (event) => {
     event.preventDefault()
 
-    navlist.classList.toggle("active")
+    navList.classList.toggle("active")
     menuIcon.classList.toggle("bx-x")
 })
 
-document.addEventListener("scroll", () => {
-    navlist.classList.remove("active")
+window.addEventListener("scroll", () => {
+    navList.classList.remove("active")
     menuIcon.classList.remove("bx-x")
 })
 
@@ -36,4 +36,4 @@ const offSetTop = () => {
         scrollArrowContainer.style.display = "none"
     }
 }
-document.addEventListener("scroll", offSetTop)
+window.addEventListener("scroll", offSetTop)
