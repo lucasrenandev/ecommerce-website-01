@@ -1,8 +1,17 @@
+"use strict"
+
 const header = document.querySelector("header")
 const navList = document.querySelector(".nav-list")
 const menuIcon = document.querySelector("#menu-icon")
 const scrollArrowContainer = document.querySelector(".scroll-arrow")
 const scrollArrow = document.querySelector("#up-arrow")
+const preventReload = Array.from(document.getElementsByClassName("prevent-reload"))
+
+preventReload.map(prevent => {
+    prevent.addEventListener("click", (event) => {
+        event.preventDefault()
+    })
+})
 
 window.addEventListener("scroll", () => {
     header.classList.toggle("sticky", window.scrollY > 0)
