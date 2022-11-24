@@ -1,0 +1,80 @@
+@media screen and (max-width: 1100px) {
+
+    header {
+        padding: 12px 5%;
+    }
+
+    header.sticky {
+        padding: 12px 5%;
+    }
+
+    .home, .featured, .new, .contact {
+        padding: 100px 5%;
+    }
+
+    .cta {
+        padding: 0 5%;
+    }
+
+    .brand {
+        padding: 50px 5%;
+    }
+
+    .contact {
+        height: 100%;
+    }
+}
+
+@media screen and (max-width: 820px) {
+
+    header nav .menu-icons {
+        display: inline-flex;
+    }
+
+    header nav .menu-icons .bx-menu {
+        display: block;
+    }
+
+    header nav ul {
+        position: fixed;
+        top: 9%;
+        left: -100%;
+        width: 65%;
+        min-height: 100vh;
+        background-color: #fff;
+        flex-direction: column;
+        justify-content: center;
+        transition: .45s ease;
+    }
+
+    header nav ul.active {
+        left: 0;
+    }
+
+    header nav ul li:not(:last-child) {
+        margin-bottom: 2rem; 
+    }
+
+    header nav ul li a {
+        display: block;
+    }
+
+}
+
+@media screen and (max-width: 400px) {
+
+    .featured .featured-content {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+    .contact .last-content p {
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width: 330px) {
+
+    .cta {
+        background-position: 80%;
+    }
+}
