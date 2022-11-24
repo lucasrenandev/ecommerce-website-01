@@ -294,14 +294,6 @@ header nav .menu-icons .bx-menu {
     border-radius: 0 10px 10px 10px;
 }
 
-.new .new-content .figure-content figure .sale {
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: #c8815f;
-    padding: 5px 15px;
-}
-
 .new .new-content .figure-content figure .figure-text {
     display: flex;
     flex-direction: column;
@@ -319,6 +311,14 @@ header nav .menu-icons .bx-menu {
 .new .new-content .figure-content figure .figure-text small {
     font-size: 1rem;
     font-weight: 700;
+}
+
+.new .new-content .figure-content figure .sale {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #c8815f;
+    padding: 2px 12px;
 }
 
 .new .new-content .figure-content figure .sale span {
@@ -409,6 +409,7 @@ header nav .menu-icons .bx-menu {
 
 .contact .contact-main .content .social i:hover {
     transform: translateY(-5px);
+    color: #fff;
     cursor: pointer;
 }
 
