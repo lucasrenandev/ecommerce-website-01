@@ -61,7 +61,7 @@
 
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 600px) {
 
     .featured .featured-content {
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -73,5 +73,9 @@
 
     .cta {
         background-position: 70%;
+    }
+    
+    .scroll-arrow {
+        visibility: hidden;
     }
 }

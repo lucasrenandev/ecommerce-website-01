@@ -441,3 +441,24 @@ header nav .menu-icons .bx-menu {
     font-weight: 400;
     letter-spacing: 1px;
 }
+
+/* ==== Scrool Arrrow ==== */
+
+.scroll-arrow {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    width: 50px;
+    height: 50px;
+    background-color: #c8815f;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.scroll-arrow .bx-up-arrow-alt {
+    font-size: 2rem;
+    color: white;
+}
