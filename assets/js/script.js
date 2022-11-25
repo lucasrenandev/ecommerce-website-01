@@ -4,7 +4,6 @@ const header = document.querySelector("header")
 const navList = document.querySelector(".nav-list")
 const menuIcon = document.querySelector("#menu-icon")
 const scrollArrow = document.querySelector(".scroll-arrow")
-console.log(scrollArrow)
 const preventReload = Array.from(document.getElementsByClassName("prevent-reload"))
 
 preventReload.map(prevent => {
