@@ -3,8 +3,8 @@
 const header = document.querySelector("header")
 const navList = document.querySelector(".nav-list")
 const menuIcon = document.querySelector("#menu-icon")
-const scrollArrowContainer = document.querySelector(".scroll-arrow")
-const scrollArrow = document.querySelector("#up-arrow")
+const scrollArrow = document.querySelector(".scroll-arrow")
+console.log(scrollArrow)
 const preventReload = Array.from(document.getElementsByClassName("prevent-reload"))
 
 preventReload.map(prevent => {
@@ -30,19 +30,16 @@ window.addEventListener("scroll", () => {
 })
 
 scrollArrow.addEventListener("click", () => {
-    offSet()
+    window.scrollTo(0, 0)
 })
 
-const offSet = () => {
-    window.scrollTo(0, 0)
-}
-
-const offSetTop = () => {
+const offSetVertical = () => {
     if(window.scrollY > 1000) {
-        scrollArrowContainer.style.display = "flex"
+        scrollArrow.style.display = "inline-flex"
     }
     else {
-        scrollArrowContainer.style.display = "none"
+        scrollArrow.style.display = "none"
     }
 }
-window.addEventListener("scroll", offSetTop)
+window.addEventListener("scroll", offSetVertical)
+offSetVertical()
