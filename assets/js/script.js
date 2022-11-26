@@ -81,4 +81,12 @@ animationScroll()
 
 window.addEventListener("scroll", debounce(function() {
     animationScroll()
-}, 280))
+}, 300))
+
+const sr = ScrollReveal({
+    distance: "30px",
+    duration: 2600,
+    reset: true
+})
+
+sr.reveal(".home-content", {delay: 200, origin: "bottom"})
