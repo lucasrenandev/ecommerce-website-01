@@ -1,5 +1,7 @@
 "use strict"
 
+/* ==== SCROLL ==== */
+
 const header = document.querySelector("header")
 const navList = document.querySelector(".nav-list")
 const menuIcon = document.querySelector("#menu-icon")
@@ -42,3 +44,41 @@ const offSetVertical = () => {
 }
 window.addEventListener("scroll", offSetVertical)
 offSetVertical()
+
+/* ==== SCROLL ANIMADO ==== */
+
+const debounce = function(func, wait, immediate) {
+    let timeout;
+    return function(...args) {
+      const context = this;
+      const later = function () {
+        timeout = null;
+        if (!immediate) func.apply(context, args);
+      };
+      const callNow = immediate && !timeout;
+      clearTimeout(timeout);
+      timeout = setTimeout(later, wait);
+      if (callNow) func.apply(context, args);
+    };
+  };
+
+const target = document.querySelectorAll("[data-anime")
+const animationClass = "animate" 
+
+function animationScroll() {
+    const scrollTop = window.scrollY + ((window.innerHeight * 3) / 4)
+
+    target.forEach(function(element) {
+        if(scrollTop > element.offsetTop) {
+            element.classList.add(animationClass)
+        }
+        else {
+            element.classList.remove(animationClass)
+        }
+    }) 
+}
+animationScroll()
+
+window.addEventListener("scroll", debounce(function() {
+    animationScroll()
+}, 280))

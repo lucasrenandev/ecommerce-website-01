@@ -442,7 +442,7 @@ header nav .menu-icons .bx-menu {
     letter-spacing: 1px;
 }
 
-/* ==== Scrool Arrrow ==== */
+/* ==== SCROLL ARROW ==== */
 
 .scroll-arrow {
     position: fixed;
@@ -461,4 +461,20 @@ header nav .menu-icons .bx-menu {
 .scroll-arrow .bx-up-arrow-alt {
     font-size: 2rem;
     color: white;
+}
+
+/* ==== ANIMAÇÃO SCROLL ==== */
+
+[data-anime] {
+    opacity: 0;
+    transition: .5s;
+}
+
+[data-anime="bottom"] {
+    transform: translate3d(0, 50px, 0);
+}
+
+[data-anime].animate {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
 }
