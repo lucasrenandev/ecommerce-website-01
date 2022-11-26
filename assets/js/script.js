@@ -81,7 +81,7 @@ animationScroll()
 
 window.addEventListener("scroll", debounce(function() {
     animationScroll()
-}, 300))
+}, 200))
 
 const sr = ScrollReveal({
     distance: "30px",
@@ -89,4 +89,4 @@ const sr = ScrollReveal({
     reset: true
 })
 
-sr.reveal(".home-content", {delay: 200, origin: "bottom"})
+sr.reveal(".home-content", {delay: 280, origin: "bottom"})
