@@ -45,7 +45,7 @@ const offSetVertical = () => {
 window.addEventListener("scroll", offSetVertical)
 offSetVertical()
 
-/* ==== SCROLL ANIMADO ==== */
+/* ==== SCROLL ANIMATION ==== */
 
 const debounce = function(func, wait, immediate) {
     let timeout;
@@ -65,7 +65,7 @@ const debounce = function(func, wait, immediate) {
 const target = document.querySelectorAll("[data-anime]")
 const animationClass = "animate" 
 
-function animationScroll() {
+function scrollAnimation() {
     const scrollTop = window.scrollY + ((window.innerHeight * 3) / 4)
 
     target.forEach(function(element) {
@@ -77,10 +77,10 @@ function animationScroll() {
         }
     }) 
 }
-animationScroll()
+scrollAnimation()
 
 window.addEventListener("scroll", debounce(function() {
-    animationScroll()
+    scrollAnimation()
 }, 200))
 
 const sr = ScrollReveal({
