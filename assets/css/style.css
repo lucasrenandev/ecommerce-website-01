@@ -467,7 +467,7 @@ header nav .menu-icons .bx-menu {
 
 [data-anime] {
     opacity: 0;
-    transition: .5s;
+    transition: 1s ease-in;
 }
 
 [data-anime="bottom"] {

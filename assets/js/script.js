@@ -62,7 +62,7 @@ const debounce = function(func, wait, immediate) {
     };
   };
 
-const target = document.querySelectorAll("[data-anime")
+const target = document.querySelectorAll("[data-anime]")
 const animationClass = "animate" 
 
 function animationScroll() {
