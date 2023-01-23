@@ -455,7 +455,7 @@ header nav .menu-icons .bx-menu {
     color: white;
 }
 
-/* ==== SCROLL ANIMATION ==== */
+/* ==== ANIMATION SCROLL ==== */
 [data-anime] {
     opacity: 0;
     transition: all 0.80s ease-in;
