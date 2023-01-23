@@ -20,7 +20,6 @@ body {
 }
 
 /* ==== HEADER ==== */
-
 header {
     width: 100%;
     position: fixed;
@@ -93,7 +92,6 @@ header nav .menu-icons .bx-menu {
 }
 
 /* ==== SECTION HOME ==== */
-
 .home {
     position: relative;
     width: 100%;
@@ -147,7 +145,6 @@ header nav .menu-icons .bx-menu {
 }
 
 /* ==== SECTION FEATURED ==== */
-
 .featured {
     width: 100%;
     text-align: center;
@@ -228,7 +225,6 @@ header nav .menu-icons .bx-menu {
 }
 
 /* ==== SECTION CTA ==== */
-
 .cta {
     width: 100%;
     height: 60vh;
@@ -261,7 +257,6 @@ header nav .menu-icons .bx-menu {
 }
 
 /* ==== SECTION NEW ==== */
-
 .new {
     width: 100%;
     padding: 100px 14%;
@@ -329,7 +324,6 @@ header nav .menu-icons .bx-menu {
 }
 
 /* ==== SECTION BRAND ==== */
-
 .brand {
     width: 100%;
     padding: 50px 14%;
@@ -354,7 +348,6 @@ header nav .menu-icons .bx-menu {
 }
 
 /* ==== FOOTER CONTACT ==== */
-
 .contact {
     position: relative;
     padding: 100px 14%;
@@ -443,7 +436,6 @@ header nav .menu-icons .bx-menu {
 }
 
 /* ==== SCROLL ARROW ==== */
-
 .scroll-arrow {
     position: fixed;
     bottom: 60px;
@@ -464,10 +456,9 @@ header nav .menu-icons .bx-menu {
 }
 
 /* ==== SCROLL ANIMATION ==== */
-
 [data-anime] {
     opacity: 0;
-    transition: 1s ease-in;
+    transition: all 0.80s ease-in;
 }
 
 [data-anime="bottom"] {

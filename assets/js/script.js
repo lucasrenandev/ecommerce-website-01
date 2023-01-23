@@ -1,7 +1,7 @@
+// STRICT MODE
 "use strict"
 
-/* ==== SCROLL ==== */
-
+/* ==== NORMAK SCROLL ==== */
 const header = document.querySelector("header")
 const navList = document.querySelector(".nav-list")
 const menuIcon = document.querySelector("#menu-icon")
@@ -34,7 +34,7 @@ scrollArrow.addEventListener("click", () => {
     window.scrollTo(0, 0)
 })
 
-const offSetVertical = () => {
+const hiddenScrollArrow = () => {
     if(window.scrollY > 1000) {
         scrollArrow.style.display = "inline-flex"
     }
@@ -42,11 +42,10 @@ const offSetVertical = () => {
         scrollArrow.style.display = "none"
     }
 }
-window.addEventListener("scroll", offSetVertical)
-offSetVertical()
+window.addEventListener("scroll", hiddenScrollArrow)
+hiddenScrollArrow()
 
-/* ==== SCROLL ANIMATION ==== */
-
+/* ==== ANIMATION SCROLL ==== */
 const debounce = function(func, wait, immediate) {
     let timeout;
     return function(...args) {
@@ -65,7 +64,7 @@ const debounce = function(func, wait, immediate) {
 const target = document.querySelectorAll("[data-anime]")
 const animationClass = "animate" 
 
-function scrollAnimation() {
+function animationScroll() {
     const scrollTop = window.scrollY + ((window.innerHeight * 3) / 4)
 
     target.forEach(function(element) {
@@ -77,16 +76,15 @@ function scrollAnimation() {
         }
     }) 
 }
-scrollAnimation()
+animationScroll()
 
 window.addEventListener("scroll", debounce(function() {
-    scrollAnimation()
+    animationScroll()
 }, 200))
 
 const sr = ScrollReveal({
     distance: "30px",
-    duration: 2600,
+    duration: 2300,
     reset: true
 })
-
-sr.reveal(".home-content", {delay: 280, origin: "bottom"})
+sr.reveal(".home-content", {delay: 200, origin: "bottom"})
