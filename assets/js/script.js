@@ -1,7 +1,7 @@
 // STRICT MODE
 "use strict"
 
-/* ==== NORMAL SCROLL ==== */
+// NORMAL SCROLL 
 const header = document.querySelector("header")
 const navList = document.querySelector(".nav-list")
 const menuIcon = document.querySelector("#menu-icon")
@@ -45,7 +45,7 @@ const hiddenScrollArrow = () => {
 window.addEventListener("scroll", hiddenScrollArrow)
 hiddenScrollArrow()
 
-/* ==== ANIMATION SCROLL ==== */
+// ANIMATION SCROLL
 const debounce = function(func, wait, immediate) {
     let timeout;
     return function(...args) {
