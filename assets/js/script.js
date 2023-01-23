@@ -1,7 +1,7 @@
 // STRICT MODE
 "use strict"
 
-/* ==== NORMAK SCROLL ==== */
+/* ==== NORMAL SCROLL ==== */
 const header = document.querySelector("header")
 const navList = document.querySelector(".nav-list")
 const menuIcon = document.querySelector("#menu-icon")
