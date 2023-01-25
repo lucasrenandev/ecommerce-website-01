@@ -61,13 +61,13 @@ const debounce = function(func, wait, immediate) {
     };
   };
 
-const target = document.querySelectorAll("[data-anime]")
+const dataAnime = document.querySelectorAll("[data-anime]")
 const animationClass = "animate" 
 
 function animationScroll() {
     const scrollTop = window.scrollY + ((window.innerHeight * 3) / 4)
 
-    target.forEach(function(element) {
+    dataAnime.forEach(function(element) {
         if(scrollTop > element.offsetTop) {
             element.classList.add(animationClass)
         }
@@ -78,13 +78,15 @@ function animationScroll() {
 }
 animationScroll()
 
-window.addEventListener("scroll", debounce(function() {
-    animationScroll()
-}, 200))
+if(dataAnime.length) {
+    window.addEventListener("scroll", debounce(function() {
+        animationScroll()
+    }, 200))
+}
 
 const sr = ScrollReveal({
     distance: "30px",
-    duration: 2300,
+    duration: 2200,
     reset: true
 })
 sr.reveal(".home-content", {delay: 200, origin: "bottom"})

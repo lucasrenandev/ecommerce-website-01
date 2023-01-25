@@ -31,7 +31,7 @@
         display: inline-flex;
     }
 
-    header nav .menu-icons .bx-menu {
+    #menu-icon {
         display: block;
     }
 

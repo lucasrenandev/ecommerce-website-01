@@ -21,18 +21,18 @@ body {
 
 /* ==== HEADER ==== */
 header {
-    width: 100%;
     position: fixed;
+    width: 100%;
     top: 0;
     left: 0;
     padding: 20px 14%;
     background-color: transparent;
     transition: .35s ease;
-    z-index: 10;
+    z-index: 100;
 }
 
 header.sticky {
-    background: #fff;
+    background-color: #fff;
     padding: 14px 14%;
     box-shadow: 0px 0px 10px rgb(0 0 0 / 10%);
 }
@@ -84,10 +84,10 @@ header nav .menu-icons i:hover {
     color: #c8815f;
 }
 
-header nav .menu-icons .bx-menu {
+#menu-icon {
     font-size: 2.2rem;
     color: #111;
-    z-index: 20;
+    z-index: 101;
     display: none;
 }
 
@@ -458,7 +458,7 @@ header nav .menu-icons .bx-menu {
 /* ==== ANIMATION SCROLL ==== */
 [data-anime] {
     opacity: 0;
-    transition: all 0.80s ease-in;
+    transition: all 0.60s ease-in;
 }
 
 [data-anime="bottom"] {
